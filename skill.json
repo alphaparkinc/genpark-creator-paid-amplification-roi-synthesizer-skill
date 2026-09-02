@@ -1,0 +1,42 @@
+{
+  "name": "genpark-creator-paid-amplification-roi-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Creator paid amplification and Spark Ads ROI synthesizer modeling whitelisted creator ad ROAS and CAC efficiency.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "influencer-media",
+  "tags": [
+    "spark-ads",
+    "creator-licensing",
+    "paid-amplification",
+    "roas-calculator",
+    "whitelisted-ads"
+  ],
+  "inputs": {
+    "creator_organic_post_url": {
+      "type": "string"
+    },
+    "paid_ad_spend_budget_usd": {
+      "type": "number"
+    },
+    "attributed_revenue_usd": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "amplification_synthesis_id": {
+      "type": "string"
+    },
+    "organic_to_paid_roas_multiplier": {
+      "type": "number"
+    },
+    "blended_customer_acquisition_cost_cac_usd": {
+      "type": "number"
+    },
+    "paid_amplification_analytics_dossier_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
